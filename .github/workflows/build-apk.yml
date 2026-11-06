@@ -19,7 +19,7 @@ jobs:
         with:
           gradle-version: '8.9'
       - name: Unpack Android project
-        run: unzip -q source-v0.2.zip -d .
+        run: unzip -q source-v0.2-jvm17-fixed.zip -d .
       - name: Build debug APK
         run: gradle -p AutoCauCa --no-daemon assembleDebug
       - name: Upload APK
